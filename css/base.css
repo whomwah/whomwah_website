@@ -1,0 +1,28 @@
+body {
+  background-image: url(/images/background.jpg);
+  background-repeat:no-repeat;
+  background-position: top center;
+}
+
+#profile {
+  position:absolute;
+  top: 210px;
+  left: 250px;
+}
+
+#profile p {
+  width: 400px;
+}
+
+
+h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 26px;
+}
