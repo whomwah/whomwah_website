@@ -7,6 +7,8 @@
 
 @import 'vars';
 @import 'mixins';
+@import 'responsive';
+
 
 body, input, select, textarea {
   color: $color-fg;
@@ -51,8 +53,16 @@ a {
   position: fixed;
 }
 
+@include vendor-keyframes('background') {
+  0%    { @include vendor-property('transform', 'translate3d(1.0em,0,0)');     opacity: 1; }
+  100%  { @include vendor-property('transform', 'translate3d(0,0,0)');     opacity: 1; }
+}
+
 #bg {
   /* Set your background with this */
+  @include vendor-property('animation', 'background #{$duration-header} #{$delay-header} forwards');
+
+  opacity: 0;
   background: $bg;
   background-repeat: no-repeat;
   height: 100%;
@@ -79,7 +89,7 @@ a {
 
 @include vendor-keyframes('header') {
   0%    { @include vendor-property('transform', 'translate3d(0,0.5em,0)'); opacity: 0; }
-  100%  { @include vendor-property('transform', 'translate3d(0,0,0)'); opacity: 1; }
+  100%  { @include vendor-property('transform', 'translate3d(0,0,0)');     opacity: 1; }
 }
 
 #header {
@@ -97,7 +107,7 @@ a {
 
   h1 {
     font-family: 'Courgette', sans-serif;
-    font-size: 2.95em;
+    font-size: 3.15em;
     font-weight: 900;
     color: $heading-color;
     margin: 0 0 0.1em 0;
