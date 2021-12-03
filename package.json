@@ -1,12 +1,16 @@
 {
   "license": "MIT",
   "scripts": {
-    "watch": "npx tailwindcss  -i tailwind.css -o ./dist/tailwind.css --watch",
-    "build": "npx tailwindcss  -i tailwind.css -o ./dist/tailwind.css",
-    "prod": "NODE_ENV=production npx tailwindcss  -i tailwind.css -o ./dist/tailwind.css --minify"
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "vite build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "sass": "^1.44.0",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "vite": "^2.6.14"
   }
 }
