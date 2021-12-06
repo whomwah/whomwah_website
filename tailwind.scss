@@ -14,4 +14,54 @@
   p {
     @apply text-lg;
   }
+
+  .link-color {
+    @apply text-blue-600;
+  }
+
+  .fun:after {
+    content: " ";
+    display: block;
+    border-radius: 30%;
+    width: 0;
+    height: 0;
+    margin: -32em;
+    mix-blend-mode: screen;
+    border-width: 32em;
+    border-style: solid;
+    @apply text-blue-200;
+    animation: spin-forward 250s infinite;
+  }
+
+  @media screen and (max-width: 320px) {
+    .fun:before {
+      position: absolute;
+      left: -260px;
+    }
+
+    .fun:after {
+      position: absolute;
+      left: -220px;
+    }
+  }
+
+  .fun:before {
+    content: " ";
+    display: block;
+    border-radius: 30%;
+    width: 0;
+    height: 0;
+    margin: -32em;
+    mix-blend-mode: screen;
+    border-width: 32em;
+    border-style: solid;
+    @apply text-blue-100;
+    animation: spin-forward 200s infinite;
+  }
+
+  @keyframes spin-forward {
+    0% { transform: rotate(0); }
+    50% { transform: rotate(900deg); }
+    100% { transform: rotate(1800deg); }
+  }
 }
