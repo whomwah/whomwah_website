@@ -64,4 +64,14 @@
       left: -220px;
     }
   }
+
+  // Safari Only as it doesn't seem to understand mix-blend-mode: screen;
+  @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+      .fun:before, .fun:after {
+        @apply text-opacity-30;
+        mix-blend-mode: multiply;
+      }
+    }
+  }
 }
