@@ -19,7 +19,7 @@
     @apply text-blue-600;
   }
 
-  .fun:before {
+  .fun:before, .fun:after {
     content: " ";
     display: block;
     border-radius: 30%;
@@ -29,20 +29,14 @@
     mix-blend-mode: screen;
     border-width: 32em;
     border-style: solid;
+  }
+
+  .fun:before {
     @apply text-blue-100;
     animation: spin-forward 200s infinite;
   }
 
   .fun:after {
-    content: " ";
-    display: block;
-    border-radius: 30%;
-    width: 0;
-    height: 0;
-    margin: -32em;
-    mix-blend-mode: screen;
-    border-width: 32em;
-    border-style: solid;
     @apply text-blue-100;
     animation: spin-forward 250s infinite;
   }
