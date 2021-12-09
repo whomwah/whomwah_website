@@ -1,8 +1,10 @@
 # A personal website built using TailwindCSS
 
-So this is my personal website. It's very simple. It's built standalone using TailwindCSS. It's also uses SASS. It didn't need to but I wanted to know how to integrate it as it's something I would use on a more complex website.
+So this is my personal website. It's very simple. It's built standalone using [TailwindCSS](https://tailwindcss.com/) and is managed using [vitejs](https://vitejs.dev/).
 
-There are simple commands:
+It's also uses SASS. It didn't need to but I wanted to know how to integrate it as it's something I would use on a more complex website.
+
+There are a few simple commands:
 
 ```
 yarn run dev - this will run a dev server at http://localhost:3000 which updates on changes
