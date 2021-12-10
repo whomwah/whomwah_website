@@ -17,6 +17,7 @@
 
   .link-color {
     @apply text-blue-600;
+    @apply decoration-2;
   }
 
   .fun:before, .fun:after {
