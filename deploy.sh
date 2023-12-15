@@ -6,6 +6,5 @@ set -e
 # build
 yarn run build
 
-rm -rf ../whomwah.github.com/
+rm -rf ../whomwah.github.com/assets/
 cp -R dist/ ../whomwah.github.com/
-# copy

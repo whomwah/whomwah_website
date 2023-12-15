@@ -1,13 +1,8 @@
-module.exports = {
-  mode: 'jit',
-  content: [
-    '*.html'
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {
-      'istok': ['Istok Web', 'sans-serif'],
-    },
     extend: {},
   },
   plugins: [],
-}
+};

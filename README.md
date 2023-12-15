@@ -1,8 +1,6 @@
 # A personal website built using TailwindCSS
 
-So this is [my personal website](https://whomwah.com). It's very simple. It's built standalone using [TailwindCSS](https://tailwindcss.com/) and is managed using [vitejs](https://vitejs.dev/).
-
-It's also uses SASS. It didn't need to but I wanted to know how to integrate it as it's something I would use on a more complex website.
+So this is [my personal website](https://whomwah.com). It's very simple. It's built standalone using [TailwindCSS](https://tailwindcss.com/) and is managed using [vitejs](https://vitejs.dev/). The animation uses [tsParticles](https://particles.js.org/).
 
 There are a few simple commands:
 
