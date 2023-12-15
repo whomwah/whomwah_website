@@ -5,10 +5,10 @@ export async function loadParticles(options: any) {
   await loadSlim(tsParticles);
 
   const particles = await tsParticles.load({ id: "tsparticles", options });
+  if (!particles) return;
 
-  window.addEventListener("resize", () => {
+  const setParticleCount = () => {
     const width = window.innerWidth;
-    if (!particles) return
 
     // Adjust the number of particles based on the window's width
     if (width < 500) {
@@ -21,7 +21,12 @@ export async function loadParticles(options: any) {
 
     // Refresh the particles with the new options
     particles.refresh();
-  });
+  };
+
+  // Set the initial particle count
+  setParticleCount();
+
+  window.addEventListener("resize", () => setParticleCount());
 }
 
 const configs = {
